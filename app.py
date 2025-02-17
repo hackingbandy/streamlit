@@ -13,7 +13,9 @@ data_url = "data/zara.csv"
 
 @st.cache_data(persist=True) #store data on disk to avoid compute every time we deploy
 def load_data():
-    data = pd.read_csv(data_url)
+    data = pd.read_csv(data_url, sep=";")
     return data
 
 data = load_data()
+
+st.write(data)
