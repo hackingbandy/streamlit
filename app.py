@@ -19,3 +19,6 @@ def load_data():
 data = load_data()
 
 st.write(data)
+
+st.sidebar.subheader("Show random data")
+random_name = st.sidebar.radio()
