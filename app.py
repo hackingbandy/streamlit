@@ -20,5 +20,5 @@ data = load_data()
 
 st.write(data)
 
-st.sidebar.subheader("Show random data")
-random_name = st.sidebar.radio()
+st.sidebar.subheader("Show random Sectino")
+random_sectino = st.sidebar.radio('Gender', ('MAN', 'WOMAN'))
